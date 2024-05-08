@@ -8,8 +8,8 @@ const sequelize = new Sequelize(process.env.JAWSDB_URL
       database: process.env.DB_NAME,
       username: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
-      host: 'localhost',
-      dialect: 'mysql', // Specify the dialect explicitly
+      host: 'root@localhost',
+      dialect: 'mysql',
       dialectOptions: {
         decimalNumbers: true,
       },
