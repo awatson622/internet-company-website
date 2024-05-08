@@ -27,24 +27,24 @@ Node.js
 
 
 ## Installation 
-Clone the repository.
-Navigate to the project directory.
-Install dependencies by running npm install.
+-Clone the repository.
+-Navigate to the project directory.
+-Install dependencies by running npm install.
 
 
 ## Usage
-Create a .env file in the root directory of the project.
-Add the following environment variables:
+-Create a .env file in the root directory of the project.
+-Add the following environment variables:
 DB_NAME=your_database_name
 DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
-Ensure MySQL server is running.
-Run the following commands in the terminal:
-npm run schema
-npm run seed
-Start the server by running:
-npm start
-Test the API routes using Insomnia Core.
+-Ensure MySQL server is running.
+-Run the following commands in the terminal:
+-npm run schema
+-npm run seed
+-Start the server by running:
+-npm start
+-Test the API routes using Insomnia Core.
 
 
 ## License
