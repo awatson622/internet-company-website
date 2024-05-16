@@ -1,22 +1,11 @@
 const express = require('express');
-const routes = require('./index');
-
 const app = express();
-const PORT = process.env.PORT || 3001;
+const router = require('./routes');  // Correctly requiring the routes module
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // Middleware to parse JSON bodies
+app.use(router);
 
-// Mount the routes defined in index.js
-app.use(routes);
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong!');
-});
-
-// Start the server
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });

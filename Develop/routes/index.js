@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const apiRoutes = require('./api');
+const apiRoutes = require('./api');  // Adjust path if needed
 
 router.use('/api', apiRoutes);
 
@@ -9,4 +9,3 @@ router.use((err, req, res, next) => {
 });
 
 module.exports = router;
-
